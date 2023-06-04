@@ -1,0 +1,29 @@
+:root {
+    /* background colours */
+    --bg1: #0a0a23;
+    --bg2: #1b1b32;
+    --bg3: #2a2a40;
+    --bg4: #3b3b4f;
+    /* text and main highlight colour */
+    --tx1: #ffffff;
+    --tx2: #f5f6f7;
+    --tx3: #dfdfe2;
+    --tx4: #d0d0d5;
+    /* accent colour */
+    --purple: #dbb8ff;
+    --darkpurple: #5a01a7;
+    --yellow: #f1be32;
+    --darkyellow: #4d3800;
+    --blue: #99c9ff;
+    --darkblue: #002ead;
+    --green: #acd157;
+    --darkgreen: #00471b;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+}
