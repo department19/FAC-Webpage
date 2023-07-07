@@ -1,5 +1,5 @@
 * {
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 :root {
@@ -26,16 +26,87 @@
 
 html {
     font-size: 10px;
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
     color: var(--txt1);
     font-size: 1.8rem;
-    background-color: var(--bg1);
+    /* background-color: var(--bg1); */
 
 }
 
+.banner {
+    box-sizing: inherit;
+    outline: 1px dashed green;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 100px;
+    /* background: url(assets/bg.jpg); */
+    background-color: var(--bg1);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    box-sizing: inherit;
+    outline: 1px dashed red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+header .logo {
+    /* margin: inherit; */
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 3s;
+}
+
+header #toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+header #toggle::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+header #toggle::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
 article {
-    height: 100vh;
+    outline: 1px dashed yellow;
+    /* height: 100vh; */
 }
