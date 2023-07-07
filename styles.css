@@ -38,8 +38,7 @@ body {
     /* padding: 0; */
     color: var(--txt1);
     font-size: 1.8rem;
-    /* background-color: var(--bg1); */
-
+    background-color: var(--bg2);
 }
 
 .banner {
@@ -55,6 +54,8 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+    z-index: 3;
 }
 
 header {
@@ -67,7 +68,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 40px 100px;
-    z-index: 1000;
+    z-index: 4;
 }
 
 header .logo {
@@ -81,14 +82,15 @@ header .logo {
     transition: 3s;
 }
 
-header #toggle {
+header #navbutton {
     position: relative;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    z-index: 5;
 }
 
-header #toggle::before {
+header #navbutton::before {
     content: "";
     position: absolute;
     top: 7px;
@@ -97,7 +99,7 @@ header #toggle::before {
     background: #fff;
 }
 
-header #toggle::after {
+header #navbutton::after {
     content: "";
     position: absolute;
     bottom: 7px;
@@ -105,6 +107,72 @@ header #toggle::after {
     height: 2px;
     background: #fff;
 }
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 400px;
+    height: 100vh;
+    height: 100dvh;
+    background-color: var(--bg4);
+    color: var(--txt4);
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#navbar ul {
+    position: relative;
+    padding-left: 0;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+
+#navbar ul li a {
+    color: var(--txt4);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+}
+
+/* sidebar is active */
+
+.banner.active header #navbutton::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+
+.banner.active header #navbutton::after {
+    /* transform: translateX(400px); */
+    transform: translate(-50%,-50%) rotate(-45deg);
+    top: 50%;
+    left: 50%;
+}
+
+.banner.active {
+    transform: translate(-400px);
+    transition: 0.25s;
+}
+
+#navbar.active {
+    right: 0;
+    transition: 0.25s;
+}
+
+/* END sidebar active  -   -   - */
+
+main {}
 
 article {
     outline: 1px dashed yellow;
