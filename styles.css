@@ -1,3 +1,7 @@
+* {
+    outline: 1px dashed red;
+}
+
 :root {
     /* background colours */
     --bg1: #0a0a23;
@@ -5,10 +9,10 @@
     --bg3: #2a2a40;
     --bg4: #3b3b4f;
     /* text and main highlight colour */
-    --tx1: #ffffff;
-    --tx2: #f5f6f7;
-    --tx3: #dfdfe2;
-    --tx4: #d0d0d5;
+    --txt1: #ffffff;
+    --txt2: #f5f6f7;
+    --txt3: #dfdfe2;
+    --txt4: #d0d0d5;
     /* accent colour */
     --purple: #dbb8ff;
     --darkpurple: #5a01a7;
@@ -22,8 +26,16 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
+    color: var(--txt1);
     font-size: 1.8rem;
+    background-color: var(--bg1);
+
+}
+
+article {
+    height: 100vh;
 }
