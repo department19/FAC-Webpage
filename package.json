@@ -1,0 +1,23 @@
+{
+  "name": "fac-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/department19/FAC-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/department19/FAC-Game/issues"
+  },
+  "homepage": "https://github.com/department19/FAC-Game#readme",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
