@@ -22,5 +22,11 @@ module.exports = {
     'sourceType': 'module',
   },
   'rules': {
+    'quotes': [
+      'off',
+    ],
+    'max-len': 'off',
+    'linebreak-style': 'off',
+    'require-jsdoc': 'off',
   },
 };
