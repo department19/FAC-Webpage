@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>My Webpage</title>
+		<title>Jack L</title>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
@@ -25,38 +25,42 @@
 			<a class="logo">D19</a>
 			<div id="navbutton"></div>
 		</header>
+        <div id="header-border"></div>
 		<section class="banner" id="sec">
 			<div id="portraitbox">
 				<img id="portrait" src="" />
 			</div>
-			<article id="about-me">
-				<h2>About Me</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Adipisci numquam facere nisi quisquam eos officia delectus
-					esse accusamus itaque minus temporibus, labore odit amet.
-					Consequuntur magni neque distinctio pariatur a.
-				</p>
+			<article id="home">
+				<h1>Hello!</h1>
+                <h1>I'm <span>Jack Lam</span></h1>
+                <h2 class="titles">Aspiring Developer</h2>
+                <p class="hero">
+                    Welcome to my portfolio website inspired by the 
+                    freeCodeCamp aesthetic
+                </p>
 			</article>
 		</section>
 		<nav id="navbar">
 			<ul>
-				<li class="navitem"><a href="#sec">About Me</a></li>
+				<li class="navitem"><a href="#sec">Home</a></li>
+				<li class="navitem"><a href="#about-me">About me</a></li>
 				<li class="navitem"><a href="#projects">Projects</a></li>
-				<li class="navitem"><a href="#blog">Blog</a></li>
 				<li class="navitem"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<main>
+            <article id="about-me" class="maincontent">
+				<h2>About Me</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, voluptatum inventore consequuntur fugiat quaerat dolore expedita praesentium accusantium asperiores error quo dignissimos aut ducimus explicabo eius nisi! Reprehenderit, aliquam modi.</p>
+                <p>Omnis modi facere laboriosam dolor facilis cupiditate dolores obcaecati asperiores libero magnam, eveniet iusto aliquam corporis excepturi ab impedit placeat atque velit. Magnam incidunt fugiat tempora similique eveniet reiciendis inventore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita explicabo debitis consectetur culpa incidunt id fugit voluptas, omnis fugiat facilis, quisquam excepturi voluptate distinctio architecto. Atque a illo repellendus?</p>
+			</article>
 			<article id="projects" class="maincontent">
 				<div>
 					<h2>Projects</h2>
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Sapiente magni suscipit, nostrum quo nihil,
-						cupiditate voluptatibus fugiat quaerat nam quod fuga
-						voluptates optio explicabo? Neque labore quae dolorum
-						odio facere.
+						My current projects are listed below, future
+                         projects will added with additional tiles
 					</p>
 				</div>
 				<div class="project-tile-box">
@@ -70,15 +74,14 @@
 								/>
 							</div>
 							<div class="project-description">
+                                <!-- maybe do an nthchild stagger on the animation -->
 								<div>
 									<h3 class="project-name">Squash-a-Bug!</h3>
 									<h4 class="project-type">Game</h4>
 								</div>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Cupiditate nihil eaque
-									recusandae harum exercitationem ipsa
-									assumenda tenetur rerum minus. Nostrum.
+									A simple webgame where you squash the bugs by clicking
+                                     with the mouse. Can be played on a touch screen too!
 								</p>
 							</div>
 						</a>
@@ -97,17 +100,35 @@
 							</p>
 						</div>
 					</div>
+					<div class="projectitem">
+						<div class="imgbox">
+							<img src="" alt="" />
+						</div>
+						<div class="project-description">
+							<h3>Under Construction</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Cupiditate nihil eaque
+								recusandae harum exercitationem ipsa assumenda
+								tenetur rerum minus. Nostrum.
+							</p>
+						</div>
+					</div>
+					<div class="projectitem">
+						<div class="imgbox">
+							<img src="" alt="" />
+						</div>
+						<div class="project-description">
+							<h3>Under Construction</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Cupiditate nihil eaque
+								recusandae harum exercitationem ipsa assumenda
+								tenetur rerum minus. Nostrum.
+							</p>
+						</div>
+					</div>
 				</div>
-			</article>
-			<article id="blog" class="maincontent">
-				<h2>Blog</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Provident voluptatem magnam quo asperiores excepturi. Error
-					quae repellendus asperiores dicta. Repellat veritatis
-					eveniet minima pariatur sit, libero eligendi fuga dolorum!
-					Delectus.
-				</p>
 			</article>
 			<article id="contact" class="maincontent">
 				<h2>Contact</h2>

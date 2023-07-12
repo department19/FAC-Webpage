@@ -31,6 +31,7 @@ html {
 	/* padding: 0; */
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -42,9 +43,34 @@ body {
 	background-color: var(--bg2);
 }
 
+h1 {
+    font-size: 5em;
+}
+
+h1 span {
+    color: var(--green);
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size:3rem;
+}
+
+.projectitem p {
+    font-size: 2rem;
+}
+
+p.hero {
+    font-size: 1.5em;
+    margin-top: 3rem;
+}
+
 .banner {
 	box-sizing: inherit;
-	outline: 1px dashed green;
+	/* outline: 1px dashed green; */
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
@@ -58,12 +84,12 @@ body {
 	display: flex;
 	align-items: center;
 	transition: 0.5s;
-	z-index: 3;
+	z-index:10;
 }
 
 header {
+	/* outline: 1px dashed red; */
 	box-sizing: inherit;
-	outline: 1px dashed red;
 	/* position: absolute; */
 	position: sticky;
 	top: 0;
@@ -73,8 +99,27 @@ header {
 	height: 10rem;
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 100px;
-	z-index: 4;
+	padding: 3rem 10rem;
+	z-index: 100;
+    background-color: var(--bg1);
+}
+
+/* header::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border: 1px solid var(--yellow);
+} */
+
+#header-border {
+    position: sticky;
+    top: 10rem;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    border: 1px solid var(--yellow);
 }
 
 header .logo {
@@ -192,26 +237,35 @@ main {
 }
 
 article {
-	outline: 1px dashed yellow;
-	background-color: var(--bg3);
+	/* outline: 1px dashed yellow; */
 	z-index: 2;
 }
 
 main article {
-	display: flex;
+    display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: start;
 	flex-wrap: wrap;
-	gap: 10rem;
-	min-height: 120vh;
+	gap: 1rem;
+	min-height: 100vh;
+    padding: 15%;
+    background-color: var(--bg3);
+}
+
+main article > * {
+    outline: 1px dashed yellow;
+}
+
+main article:last-of-type{
+    min-height: auto;
 }
 
 .project-tile-box {
 	/* position: relative; */
 	outline: 1px purple dashed;
-	min-width: 90vw;
-	max-width: 100vw;
+	min-width: 50%;
+	max-width: 100%;
 	/* max-width: 100dvw; */
 	display: flex;
 	flex-direction: row;
@@ -295,9 +349,10 @@ a {
 .project-description {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
+	width:95%;
 	height: 8rem;
-    padding: 0 1rem;
+    margin: 0 1rem;
+    /* padding: 0 1rem; */
 	/* text-align: ; */
 	transition: 0.5s;
 	opacity: 0;
