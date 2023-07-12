@@ -181,6 +181,7 @@ main {
     margin: 0;
     background-color: var(--darkpurple);
     position: relative;
+    transition: 0.5s;
     z-index: 2;
 }
 
