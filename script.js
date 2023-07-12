@@ -5,11 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const navSlideSwitch = document.getElementById("navbutton");
   const main = document.querySelector("main");
   const navItems = document.querySelectorAll(".navitem");
+  const header = document.querySelector("header");
   // function to toggle side bar
   function togglenavbar() {
     sec.classList.toggle("active");
     navBar.classList.toggle("active");
     main.classList.toggle("active");
+    header.classList.toggle("active");
   }
 
   // tracks the side bar toggle

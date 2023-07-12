@@ -1,213 +1,310 @@
 * {
-    /* outline: 1px dashed red; */
-    margin: 0;
+	/* outline: 1px dashed red; */
+	margin: 0;
 }
 
 :root {
-    /* background colours */
-    --bg1: #0a0a23;
-    --bg2: #1b1b32;
-    --bg3: #2a2a40;
-    --bg4: #3b3b4f;
-    /* text and main highlight colour */
-    --txt1: #ffffff;
-    --txt2: #f5f6f7;
-    --txt3: #dfdfe2;
-    --txt4: #d0d0d5;
-    /* accent colour */
-    --purple: #dbb8ff;
-    --darkpurple: #5a01a7;
-    --yellow: #f1be32;
-    --darkyellow: #4d3800;
-    --blue: #99c9ff;
-    --darkblue: #002ead;
-    --green: #acd157;
-    --darkgreen: #00471b;
+	/* background colours */
+	--bg1: #0a0a23;
+	--bg2: #1b1b32;
+	--bg3: #2a2a40;
+	--bg4: #3b3b4f;
+	/* text and main highlight colour */
+	--txt1: #ffffff;
+	--txt2: #f5f6f7;
+	--txt3: #dfdfe2;
+	--txt4: #d0d0d5;
+	/* accent colour */
+	--purple: #dbb8ff;
+	--darkpurple: #5a01a7;
+	--yellow: #f1be32;
+	--darkyellow: #4d3800;
+	--blue: #99c9ff;
+	--darkblue: #002ead;
+	--green: #acd157;
+	--darkgreen: #00471b;
 }
 
 html {
-    font-size: 10px;
-    /* margin: 0; */
-    /* padding: 0; */
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+	font-size: 10px;
+	/* margin: 0; */
+	/* padding: 0; */
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    /* padding: 0; */
-    color: var(--txt1);
-    font-size: 1.8rem;
-    background-color: var(--bg2);
+	box-sizing: border-box;
+	margin: 0;
+	/* padding: 0; */
+	color: var(--txt1);
+	font-size: 1.8rem;
+	background-color: var(--bg2);
 }
 
 .banner {
-    box-sizing: inherit;
-    outline: 1px dashed green;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    min-height: 100dvh;
-    padding: 100px;
-    margin-bottom: 0;
-    /* background: url(assets/bg.jpg); */
-    background-color: var(--bg1);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    z-index: 3;
+	box-sizing: inherit;
+	outline: 1px dashed green;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	min-height: 100dvh;
+	padding: 100px;
+	margin-top: -10rem;
+	margin-bottom: 0;
+	/* background: url(assets/bg.jpg); */
+	background-color: var(--bg1);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 3;
 }
 
 header {
-    box-sizing: inherit;
-    outline: 1px dashed red;
-    /* position: absolute; */
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 100px;
-    z-index: 4;
+	box-sizing: inherit;
+	outline: 1px dashed red;
+	/* position: absolute; */
+	position: sticky;
+	top: 0;
+	left: 0;
+	/* transform: translate(0px, 100px); */
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	z-index: 4;
 }
 
 header .logo {
-    /* margin: inherit; */
-    position: relative;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 3s;
+	/* margin: inherit; */
+	position: relative;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 3s;
 }
 
 header #navbutton {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    z-index: 5;
+	position: relative;
+	background-color: var(--bg4);
+	border: var(--bg4) 5px solid;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 5;
 }
 
 header #navbutton::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    width: 100%;
-    height: 2px;
-    background: #fff;
+	content: "";
+	position: absolute;
+	top: 7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
 }
 
 header #navbutton::after {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    width: 100%;
-    height: 2px;
-    background: #fff;
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
 }
 
 #navbar {
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 400px;
-    height: 100vh;
-    height: 100dvh;
-    background-color: var(--bg4);
-    color: var(--txt4);
-    display: grid;
-    place-items: center;
-    transition: 0.5s;
-    z-index: 1;
+	position: fixed;
+	top: 0;
+	right: -200px;
+	width: 400px;
+	height: 100vh;
+	height: 100dvh;
+	background-color: var(--bg2);
+	color: var(--txt4);
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+	z-index: 1;
 }
 
 #navbar ul {
-    position: relative;
-    padding-left: 0;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
+	position: relative;
+	padding-left: 0;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #navbar ul li {
-    list-style: none;
+	list-style: none;
 }
 
-
 #navbar ul li a {
-    color: var(--txt4);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 3rem;
-    /* font-weight: 600; */
-    text-transform: uppercase;
+	color: var(--txt4);
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3rem;
+	/* font-weight: 600; */
+	text-transform: uppercase;
 }
 
 /* sidebar is active */
 
 /* stupid button design */
 header.active #navbutton::before {
-    transform: translate(-50%,-50%) rotate(45deg);
-    top: 50%;
-    left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	top: 50%;
+	left: 50%;
 }
 
 header.active #navbutton::after {
-    /* transform: translateX(400px); */
-    transform: translate(-50%,-50%) rotate(-45deg);
-    top: 50%;
-    left: 50%;
+	/* transform: translateX(400px); */
+	transform: translate(-50%, -50%) rotate(-45deg);
+	top: 50%;
+	left: 50%;
 }
 /* end of stupid button design */
 
-.banner.active, .maincontent.active, main.active {
-    transform: translate(-400px);
-    transition: 0.25s;
+.banner.active,
+.maincontent.active,
+main.active {
+	transform: translate(-400px);
+	transition: 0.25s;
 }
 
 #navbar.active {
-    right: 0;
-    transition: 0.25s;
+	right: 0;
+	transition: 0.25s;
 }
 
 /* END sidebar active  -   -   - */
 
 main {
-    margin: 0;
-    background-color: var(--darkpurple);
-    position: relative;
-    transition: 0.5s;
-    z-index: 2;
+	margin: 0;
+	background-color: var(--darkpurple);
+	position: relative;
+	transition: 0.5s;
+	z-index: 2;
 }
 
 article {
-    outline: 1px dashed yellow;
-    background-color: var(--bg2);
-    z-index: 2;
+	outline: 1px dashed yellow;
+	background-color: var(--bg3);
+	z-index: 2;
 }
 
 main article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10rem;
+	min-height: 120vh;
 }
 
 .project-tile-box {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+	/* position: relative; */
+	outline: 1px purple dashed;
+	min-width: 90vw;
+	max-width: 100vw;
+	/* max-width: 100dvw; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 2rem;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: pointer;
 }
 
 .projectitem {
-    outline: pink 1px dashed;
-    width: 10rem;
-    height: 10rem;
+	outline: pink 1px dashed;
+	position: relative;
+	/* padding: 1rem; */
+	background-color: var(--bg2);
+	width: 24rem;
+	height: 24rem;
+	border-radius: 2rem;
+	overflow: hidden;
+	transition: 1s;
+}
+
+.projectitem:hover {
+	/* position: absolute; */
+	height: 32rem;
+	aspect-ratio: 2 / 3;
+	/* transform-origin: 0 0; */
+	transform: scale(1.2, 1.2);
+	transition: 0.5s;
+}
+
+.tiledesign::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--darkpurple);
+	clip-path: circle(12rem at 80% 20%);
+	transition: 0.5s ease-in-out;
+}
+
+.tiledesign:hover::before {
+	clip-path: circle(22rem at 80% -20%);
+}
+
+.projectimg {
+	min-width: 50%;
+	/* min-height: 70%; */
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.imgbox {
+	outline: 1px dashed yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	width: 100%;
+	/* height: 22rem; */
+	transition: 0.5s;
+}
+
+.projectitem:hover .imgbox {
+	top: 5%;
+	transform: translateY(0%);
+	/* transition: 0.2s; */
+}
+
+.project-description {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2rem;
+	text-align: center;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 10;
+}
+
+.projectitem:hover .project-description {
+	height: 16rem;
+	/* transition: 0.5s; */
+	transition-delay: 0.4s;
+	opacity: 1;
+	visibility: visible;
 }
