@@ -13,15 +13,15 @@
 </head>
 
 <body>
+    <header>
+        <a class="logo">D19</a>
+        <div id="navbutton"></div>
+    </header>
     <section class="banner" id="sec">
-        <header>
-            <a class="logo">D19</a>
-            <div id="navbutton"></div>
-        </header>
         <div id="portraitbox">
             <img id="portrait" src="">
         </div>
-        <article id="About-me">
+        <article id="about-me">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Adipisci numquam facere
@@ -31,31 +31,33 @@
                 distinctio pariatur a.</p>
         </article>
     </section>
-    <nav id="navbar" class="">
+    <nav id="navbar">
         <ul>
-            <li class="navitem"><a>About Me</a></li>
-            <li class="navitem"><a>Projects</a></li>
-            <li class="navitem"><a>Blog</a></li>
-            <li class="navitem"><a>Contact</a></li>
+            <li class="navitem"><a href="#sec">About Me</a></li>
+            <li class="navitem"><a href="#projects">Projects</a></li>
+            <li class="navitem"><a href="#blog">Blog</a></li>
+            <li class="navitem"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <article id="Projects">
-            <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Sapiente magni suscipit,
-                nostrum quo nihil, cupiditate voluptatibus
-                fugiat quaerat nam quod fuga voluptates
-                optio explicabo? Neque labore quae dolorum
-                odio facere.</p>
-            <div class="projecttilebox">
+        <article id="projects" class="maincontent">
+            <div>
+                <h2>Projects</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Sapiente magni suscipit,
+                    nostrum quo nihil, cupiditate voluptatibus
+                    fugiat quaerat nam quod fuga voluptates
+                    optio explicabo? Neque labore quae dolorum
+                    odio facere.</p>
+            </div>
+            <div class="project-tile-box">
                 <div class="projectitem"></div>
                 <div class="projectitem"></div>
                 <div class="projectitem"></div>
                 <div class="projectitem"></div>
             </div>
         </article>
-        <article id="Blog">
+        <article id="blog" class="maincontent">
             <h2>Blog</h2>
             <p>Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Provident voluptatem magnam
@@ -65,7 +67,7 @@
                 libero eligendi fuga dolorum! Delectus.</p>
 
         </article>
-        <article id="Contact">
+        <article id="contact" class="maincontent">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Odit dicta nisi quibusdam expedita?</p>

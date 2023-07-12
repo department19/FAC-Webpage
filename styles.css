@@ -1,5 +1,6 @@
 * {
     /* outline: 1px dashed red; */
+    margin: 0;
 }
 
 :root {
@@ -49,6 +50,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     padding: 100px;
+    margin-bottom: 0;
     /* background: url(assets/bg.jpg); */
     background-color: var(--bg1);
     background-size: cover;
@@ -61,7 +63,8 @@ body {
 header {
     box-sizing: inherit;
     outline: 1px dashed red;
-    position: absolute;
+    /* position: absolute; */
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,20 +150,22 @@ header #navbutton::after {
 
 /* sidebar is active */
 
-.banner.active header #navbutton::before {
+/* stupid button design */
+header.active #navbutton::before {
     transform: translate(-50%,-50%) rotate(45deg);
     top: 50%;
     left: 50%;
 }
 
-.banner.active header #navbutton::after {
+header.active #navbutton::after {
     /* transform: translateX(400px); */
     transform: translate(-50%,-50%) rotate(-45deg);
     top: 50%;
     left: 50%;
 }
+/* end of stupid button design */
 
-.banner.active {
+.banner.active, .maincontent.active, main.active {
     transform: translate(-400px);
     transition: 0.25s;
 }
@@ -172,10 +177,36 @@ header #navbutton::after {
 
 /* END sidebar active  -   -   - */
 
-main {}
+main {
+    margin: 0;
+    background-color: var(--darkpurple);
+    position: relative;
+    z-index: 2;
+}
 
 article {
     outline: 1px dashed yellow;
-    /* height: 100vh; */
+    background-color: var(--bg2);
     z-index: 2;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    min-height: 100vh;
+}
+
+.project-tile-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.projectitem {
+    outline: pink 1px dashed;
+    width: 10rem;
+    height: 10rem;
 }
