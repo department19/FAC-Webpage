@@ -25,117 +25,145 @@
 			<a class="logo">D19</a>
 			<div id="navbutton"></div>
 		</header>
-        <div id="header-border"></div>
-		<section class="banner" id="sec">
+		<div id="header-border"></div>
+		<section class="banner snap" id="sec">
 			<div id="portraitbox">
 				<img id="portrait" src="" />
 			</div>
 			<article id="home">
 				<h1>Hello!</h1>
-                <h1>I'm <span>Jack Lam</span></h1>
-                <h2 class="titles">Aspiring Developer</h2>
-                <p class="hero">
-                    Welcome to my portfolio website inspired by the 
-                    freeCodeCamp aesthetic
-                </p>
+				<h1>I'm <span>Jack Lam</span></h1>
+				<h2 class="titles">Aspiring Developer</h2>
+				<p class="hero">
+					Welcome to my portfolio website inspired by the freeCodeCamp
+					aesthetic
+				</p>
 			</article>
 		</section>
 		<nav id="navbar">
 			<ul>
 				<li class="navitem"><a href="#sec">Home</a></li>
+				<!-- maybe use "scroll padding" to fix this -->
 				<li class="navitem"><a href="#about-me">About me</a></li>
 				<li class="navitem"><a href="#projects">Projects</a></li>
 				<li class="navitem"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<main>
-            <article id="about-me" class="maincontent">
-				<h2>About Me</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, voluptatum inventore consequuntur fugiat quaerat dolore expedita praesentium accusantium asperiores error quo dignissimos aut ducimus explicabo eius nisi! Reprehenderit, aliquam modi.</p>
-                <p>Omnis modi facere laboriosam dolor facilis cupiditate dolores obcaecati asperiores libero magnam, eveniet iusto aliquam corporis excepturi ab impedit placeat atque velit. Magnam incidunt fugiat tempora similique eveniet reiciendis inventore!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita explicabo debitis consectetur culpa incidunt id fugit voluptas, omnis fugiat facilis, quisquam excepturi voluptate distinctio architecto. Atque a illo repellendus?</p>
-			</article>
-			<article id="projects" class="maincontent">
-				<div>
-					<h2>Projects</h2>
-					<p>
-						My current projects are listed below, future
-                         projects will added with additional tiles
+			<section id="about-me" class="snap">
+				<article class="maincontent">
+					<h2 class="aos">About Me</h2>
+					<p class="aos">
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Numquam, voluptatum inventore consequuntur fugiat
+						quaerat dolore expedita praesentium accusantium
+						asperiores error quo dignissimos aut ducimus explicabo
+						eius nisi! Reprehenderit, aliquam modi.
 					</p>
-				</div>
-				<div class="project-tile-box">
-					<div class="projectitem tiledesign">
-						<a href="https://department19.github.io/FAC-Game/">
+					<p class="aos">
+						Omnis modi facere laboriosam dolor facilis cupiditate
+						dolores obcaecati asperiores libero magnam, eveniet
+						iusto aliquam corporis excepturi ab impedit placeat
+						atque velit. Magnam incidunt fugiat tempora similique
+						eveniet reiciendis inventore!
+					</p>
+					<p class="aos">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Totam expedita explicabo debitis consectetur culpa
+						incidunt id fugit voluptas, omnis fugiat facilis,
+						quisquam excepturi voluptate distinctio architecto.
+						Atque a illo repellendus?
+					</p>
+				</article>
+			</section>
+			<section id="projects" class="snap">
+				<article class="maincontent aos">
+					<div>
+						<h2 class="">Projects</h2>
+						<p class="">
+							My current projects are listed below, future
+							projects will added with additional tiles
+						</p>
+					</div>
+					<div class="project-tile-box">
+						<div class="projectitem tiledesign stagger">
+							<a href="https://department19.github.io/FAC-Game/">
+								<div class="imgbox">
+									<img
+										class="projectimg"
+										src="Assets/green bug.png"
+										alt=""
+									/>
+								</div>
+								<div class="project-description">
+									<!-- maybe do an nthchild stagger on the animation -->
+									<div>
+										<h3 class="project-name">
+											Squash-a-Bug!
+										</h3>
+										<h4 class="project-type">Game</h4>
+									</div>
+									<p>
+										A simple webgame where you squash the
+										bugs by clicking with the mouse. Can be
+										played on a touch screen too!
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="projectitem stagger">
 							<div class="imgbox">
-								<img
-									class="projectimg"
-									src="Assets/green bug.png"
-									alt=""
-								/>
+								<img src="" alt="" />
 							</div>
 							<div class="project-description">
-                                <!-- maybe do an nthchild stagger on the animation -->
-								<div>
-									<h3 class="project-name">Squash-a-Bug!</h3>
-									<h4 class="project-type">Game</h4>
-								</div>
+								<h3>Under Construction</h3>
 								<p>
-									A simple webgame where you squash the bugs by clicking
-                                     with the mouse. Can be played on a touch screen too!
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Cupiditate nihil eaque
+									recusandae harum exercitationem ipsa
+									assumenda tenetur rerum minus. Nostrum.
 								</p>
 							</div>
-						</a>
-					</div>
-					<div class="projectitem">
-						<div class="imgbox">
-							<img src="" alt="" />
 						</div>
-						<div class="project-description">
-							<h3>Under Construction</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Cupiditate nihil eaque
-								recusandae harum exercitationem ipsa assumenda
-								tenetur rerum minus. Nostrum.
-							</p>
+						<div class="projectitem stagger">
+							<div class="imgbox">
+								<img src="" alt="" />
+							</div>
+							<div class="project-description">
+								<h3>Under Construction</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Cupiditate nihil eaque
+									recusandae harum exercitationem ipsa
+									assumenda tenetur rerum minus. Nostrum.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="projectitem">
-						<div class="imgbox">
-							<img src="" alt="" />
-						</div>
-						<div class="project-description">
-							<h3>Under Construction</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Cupiditate nihil eaque
-								recusandae harum exercitationem ipsa assumenda
-								tenetur rerum minus. Nostrum.
-							</p>
-						</div>
-					</div>
-					<div class="projectitem">
-						<div class="imgbox">
-							<img src="" alt="" />
-						</div>
-						<div class="project-description">
-							<h3>Under Construction</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Cupiditate nihil eaque
-								recusandae harum exercitationem ipsa assumenda
-								tenetur rerum minus. Nostrum.
-							</p>
+						<div class="projectitem stagger">
+							<div class="imgbox">
+								<img src="" alt="" />
+							</div>
+							<div class="project-description">
+								<h3>Under Construction</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Cupiditate nihil eaque
+									recusandae harum exercitationem ipsa
+									assumenda tenetur rerum minus. Nostrum.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</article>
-			<article id="contact" class="maincontent">
-				<h2>Contact</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
-				<p>Odit dicta nisi quibusdam expedita?</p>
-				<p>Suscipit similique molestiae eum repellat.</p>
-			</article>
+				</article>
+			</section>
+			<section id="contact" class="snap">
+				<article class="maincontent aos">
+					<h2>Contact</h2>
+					<p>E-mail: jackktlam@gmail.com</p>
+					<p>Odit dicta nisi quibusdam expedita?</p>
+					<p>Suscipit similique molestiae eum repellat.</p>
+				</article>
+			</section>
 		</main>
 	</body>
 </html>

@@ -21,4 +21,41 @@ document.addEventListener("DOMContentLoaded", function() {
   navItems.forEach((element) => {
     element.addEventListener("click", togglenavbar);
   });
+
+  // For animate on scroll
+  const observer = new IntersectionObserver((component) => {
+    component.forEach((part) => {
+      if (part.isIntersecting) {
+        part.target.classList.add("show");
+        part.target.classList.remove("hidden");
+      } else {
+        part.target.classList.remove("show");
+        part.target.classList.add("hidden");
+      }
+    });
+  });
+
+  const aosElements = document.querySelectorAll(".aos");
+  aosElements.forEach((element) =>
+    observer.observe(element));
+
+  // staggering of aos
+
+  // const hidingObserver = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     entry.target.classList.toggle('show', entry.isIntersecting);
+  //   });
+  // });
+
+  const hiddenElements = document.querySelectorAll(".stagger");
+  hiddenElements.forEach(((element, i) => {
+    element.style.transitionDelay = ((i * 200) + 400) + "ms";
+    observer.observe(element);
+  }));
+
+  // const shownElements = document.querySelectorAll(".show");
+  // shownElements.forEach(((element, i) => {
+  //   element.style.transitionDelay = i * 0 + "ms";
+  //   observer.observe(element);
+  // }));
 });
