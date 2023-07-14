@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const hiddenElements = document.querySelectorAll(".stagger");
   hiddenElements.forEach(((element, i) => {
-    element.style.transitionDelay = ((i * 200) + 400) + "ms";
+    element.style.transitionDelay = ((i * 100) + 400) + "ms";
     observer.observe(element);
   }));
 
