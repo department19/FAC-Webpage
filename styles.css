@@ -342,6 +342,7 @@ a {
 	box-shadow: var(--txt1) 0 0 0 1px;
 	overflow: hidden;
 	transition: 0.6s 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	cursor: pointer;
 	z-index: 500;
 }
 
