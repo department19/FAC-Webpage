@@ -91,6 +91,10 @@ p.hero {
 	z-index: 10;
 }
 
+#portrait {
+	width: 300px;
+}
+
 header {
 	/* outline: 1px dashed red; */
 	box-sizing: inherit;
